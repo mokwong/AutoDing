@@ -8,7 +8,7 @@ plugins {
 android {
     compileSdk 33
     defaultConfig {
-        applicationId "xcom.warof.chosen"
+        applicationId "xcom.mo.ch"
         minSdkVersion 23
         targetSdkVersion 33
         versionCode 18
@@ -21,7 +21,7 @@ android {
 
         manifestPlaceholders = [
                 JPUSH_PKGNAME : applicationId,
-                JPUSH_APPKEY : "f01b8a02b66ea2d632e52e2e", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_APPKEY : "23dee62c3a41d1a3c75c9402", //JPush 上注册的包名对应的 Appkey.
                 JPUSH_CHANNEL : "jpush", //暂时填写默认值即可.
                 VERSION_NAME : versionName,
                 CHANNEL : 'self',
@@ -81,7 +81,7 @@ android {
     greendao {
         schemaVersion 1//数据库版本号
         targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
-        daoPackage 'xcom.warof.chosen.greendao'//设置DaoMaster、DaoSession、Dao包名
+        daoPackage 'xcom.mo.ch.greendao'//设置DaoMaster、DaoSession、Dao包名
     }
 
     buildFeatures {
